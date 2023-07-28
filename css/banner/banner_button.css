@@ -1,0 +1,11 @@
+.banner_button{
+    background-color: var(--color-principal);
+    padding: .8rem;
+    border-radius: 3px;
+
+}
+.banner_button:hover{
+    transition: .3s;
+    opacity: .8;
+    cursor: pointer;
+}

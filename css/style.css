@@ -1,0 +1,23 @@
+:root{
+    --color-principal: #2A7AE4;
+    --color-titulo: #464646;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+
+
+.margen_global{
+    margin: 0 10%;
+}
