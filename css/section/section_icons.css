@@ -1,0 +1,10 @@
+.section_icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+}
+
+.icon_tittle{
+    color: var(--color-principal);
+}
