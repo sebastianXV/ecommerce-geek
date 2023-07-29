@@ -1,0 +1,10 @@
+.form_item{
+    padding: 1rem;
+    border-radius: 5px;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form_item:focus{
+    outline: none;
+}

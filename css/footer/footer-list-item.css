@@ -1,0 +1,8 @@
+.footer_list_item{
+    color: var(--color-titulo);
+}
+
+.footer_list_item:hover{
+    color: var(--color-principal);
+
+}

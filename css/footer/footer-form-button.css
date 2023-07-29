@@ -1,0 +1,16 @@
+.form_button{
+    background-color: var(--color-principal);
+    font-size: .9rem;
+    width: 50%;
+    padding: .8rem;
+    border-radius: 3px;
+    color: white;
+    text-align: left;
+    outline: none;
+}
+
+.form_button:hover{
+    transition: .3s;
+    cursor: pointer;
+    opacity: .8;
+}

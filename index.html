@@ -33,13 +33,22 @@
     <link rel="stylesheet" href="css/section/container.css">
     <link rel="stylesheet" href="css/section/section_icons.css">
 
-
-    <link rel="stylesheet" href="css/star-wars/star-tittle.css">
-
     <link rel="stylesheet" href="css/card/card-title.css">
     <link rel="stylesheet" href="css/card/card.css">
     <link rel="stylesheet" href="css/card/card-img.css">
     <link rel="stylesheet" href="css/card/card-link.css">
+    <link rel="stylesheet" href="css/card/card_precio.css">
+
+    <link rel="stylesheet" href="css/footer/footer-container.css">
+    <link rel="stylesheet" href="css/footer/footer_form.css">
+    <link rel="stylesheet" href="css/footer/footer_list.css">
+    <link rel="stylesheet" href="css/footer/footer-list-item.css">
+    <link rel="stylesheet" href="css/footer/form.css">
+    <link rel="stylesheet" href="css/footer/footer-form-item.css">
+    <link rel="stylesheet" href="css/footer/form-tittle.css">
+    <link rel="stylesheet" href="css/footer/footer-form-button.css">
+
+    <link rel="stylesheet" href="css/credits/credits.css">
 </head>
 
 <body>
@@ -47,9 +56,7 @@
         <nav class="nav margen_global">
             <a href="#"><img class="nav_logo" src="img/Logo.png" alt=""></a>
             <input class="nav_search" type="text" placeholder="¿Que deseas buscar?">
-            <button class="nav_login">
-                Login
-            </button>
+            <a href="./src/views/login_user.html" style="margin-left: auto;"><button class="nav_login" type="submit">Login</button></a>
         </nav>
     </header>
 
@@ -65,8 +72,8 @@
             <div class="section_head">
                 <h1 class="section_tittle ">Star Wars</h1>
                 <div class="section_icons">
-                    <a href="#" class="icon_tittle">Ver todos</a>
-                    <img src="img/iconos/flecha.png" alt="">
+                    <a href="#" class="icon_tittle">Ver todos
+                        <img src="img/iconos/flecha.png" alt=""></a>
                 </div>
             </div>
 
@@ -117,48 +124,52 @@
                 <h1 class="section_tittle ">Consolas</h1>
 
                 <div class="section_icons">
-                    <a class="icon_tittle" href="#">Ver todos</a>
-                    <img src="img/iconos/flecha.png" alt="">
+                    <a class="icon_tittle" href="#">Ver todos
+                        <img src="img/iconos/flecha.png" alt=""></a>
                 </div>
             </div>
-            </div>
+
+
             <div class="container">
                 <card class="card">
-                    <img src="img/star-wars/starWars.png" alt="" class="card_img">
-                    <h1 class="card_tittle">Producto XYZ</h1>
+                    <img src="img/consolas/consola1.png" alt="" class="card_img">
+                    <h1 class="card_tittle">Camiseta Konami</h1>
                     <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card>
                 <card class="card">
-                    <img src="img/star-wars/Dark1.png" alt="" class="card_img">
-                    <h1 class="card_tittle">Producto XYZ</h1>
+                    <img src="img/consolas/consola2.png" alt="" class="card_img">
+                    <h1 class="card_tittle">Camiseta SNES</h1>
                     <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card>
                 <card class="card">
-                    <img src="img/star-wars/Dark2.png" alt="" class="card_img">
-                    <h1 class="card_tittle">Producto XYZ</h1>
+                    <img src="img/consolas/consola3.png" alt="" class="card_img">
+                    <h1 class="card_tittle">Control y consola XYZ</h1>
                     <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card>
                 <card class="card">
-                    <img src="img/star-wars/Dark3.png" alt="" class="card_img">
-                    <h1 class="card_tittle">Producto XYZ</h1>
+                    <img src="img/consolas/consola4.png" alt="" class="card_img">
+                    <h1 class="card_tittle">Control y consola XYZ</h1>
                     <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card>
                 <card class="card">
-                    <img src="img/star-wars/Dark4.png" alt="" class="card_img">
-                    <h1 class="card_tittle">Producto XYZ</h1>
+                    <img src="img/consolas/consola5.png" alt="" class="card_img">
+                    <h1 class="card_tittle">Control y consola XYZ</h1>
                     <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card>
                 <card class="card">
-                    <img src="img/star-wars/Dark5.png" alt="" class="card_img">
+                    <img src="img/consolas/control1.png" alt="" class="card_img">
                     <h1 class="card_tittle">Producto XYZ</h1>
                     <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
-                </card>
+                </card class="card">
+            </div>
+            </div>
+
             </div>
         </section>
 
@@ -166,80 +177,82 @@
             <div class="section_head">
                 <h1 class="section_tittle ">Diversos</h1>
                 <div class="section_icons">
-                    <a class="icon_tittle" href="#">Ver todos</a>
-                    <img src="img/iconos/flecha.png" alt="">
+                    <a class="icon_tittle" href="#">Ver todos
+                        <img src="img/iconos/flecha.png" alt=""></a>
                 </div>
             </div>
+
             <div class="container">
                 <card class="card">
                     <img src="img/consolas/consola1.png" alt="" class="card_img">
                     <h1 class="card_tittle">Camiseta Konami</h1>
-                    <p class="card_precio">60.000</p>
+                    <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card>
                 <card class="card">
                     <img src="img/consolas/consola2.png" alt="" class="card_img">
                     <h1 class="card_tittle">Camiseta SNES</h1>
-                    <p class="card_precio">60.000</p>
+                    <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card>
                 <card class="card">
                     <img src="img/consolas/consola3.png" alt="" class="card_img">
                     <h1 class="card_tittle">Control y consola XYZ</h1>
-                    <p class="card_precio">60.000</p>
+                    <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card>
                 <card class="card">
                     <img src="img/consolas/consola4.png" alt="" class="card_img">
                     <h1 class="card_tittle">Control y consola XYZ</h1>
-                    <p class="card_precio">60.000</p>
+                    <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card>
                 <card class="card">
                     <img src="img/consolas/consola5.png" alt="" class="card_img">
                     <h1 class="card_tittle">Control y consola XYZ</h1>
-                    <p class="card_precio">60.000</p>
+                    <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card>
                 <card class="card">
                     <img src="img/consolas/control1.png" alt="" class="card_img">
-                    <h1 class="card_tittle">Prodcuto XYZ</h1>
-                    <p class="card_precio">60.000</p>
+                    <h1 class="card_tittle">Producto XYZ</h1>
+                    <p class="card_precio">$60.000</p>
                     <a href="" class="card_link">Ver producto</a>
                 </card class="card">
             </div>
+
+
         </section>
     </main>
+
     <footer>
-        <div class="container">
+        <div class="container margen_global">
             <div class="footer_icon">
                 <img src="img/Logo.png" alt="">
             </div>
-
             <ul class="footer_list">
-                <li class="footer_list_item">Quienes somos</li>
-                <li class="footer_list_item">Politica de privacidad</li>
-                <li class="footer_list_item">Programa de fidelidad</li>
-                <li class="footer_list_item">Nuestras tiendas</li>
-                <li class="footer_list_item">Quiero ser franquiciado</li>
-                <li class="footer_list_item">Anuncie aqui</li>
+                <li class="footer_list_item"><a href="#">Quienes somos</a></li>
+                <li class="footer_list_item"><a href="#">Politica de privacidad</a></li>
+                <li class="footer_list_item"><a href="#">Programa de fidelidad</a></li>
+                <li class="footer_list_item"><a href="#">Nuestras tiendas</a></li>
+                <li class="footer_list_item"><a href="#">Quiero ser franquiciado</a></li>
+                <li class="footer_list_item"><a href="#">Anuncie aqui</a> </li>
             </ul>
 
             <div class="footer_form">
-                <form action="" data-form>
+                <form class="form" action="" data-form>
                     <h1 class="form_tittle">Hable con nosotros</h1>
-                    <input class="form_item" type="text" name="name" placeholder="Escriba su nombre" data-name>
-                    <input class="form_item" type="text" name="message" data-message>
+                    <input class="form_item" type="text" name="name" placeholder="Nombre" data-name>
+                    <input class="form_item" type="text" name="message" placeholder="Escriba su mensaje" data-message>
                     <button class="form_button" type="submit">Enviar mensaje</button>
                 </form>
             </div>
         </div>
-
-        <div class="credits">
-            <p>Desarrollado por Sebastian Rojas</p>
-        </div>
     </footer>
 
+    <div class="credits margen_global">
+        <p>Desarrollado por Sebastian Rojas</p>
+    </div>
 
 </body>
 
