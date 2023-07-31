@@ -4,7 +4,6 @@
     rgba(0, 0, 0, 0.1)), url("../../img/banner-image.png");
     background-size: cover;
     background-position: center center;
-    margin-top: 2rem;
     height: 45vh;
     min-width: 100%;
 }

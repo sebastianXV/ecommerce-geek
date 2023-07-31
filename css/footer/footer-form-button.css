@@ -14,3 +14,11 @@
     cursor: pointer;
     opacity: .8;
 }
+
+
+@media(max-width:680px){
+    .form_button{
+
+        width: 100%;
+    }
+}

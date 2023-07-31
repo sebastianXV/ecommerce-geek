@@ -1,0 +1,28 @@
+.edit_icon {
+    position: absolute;
+    top: 5px;
+    width: 20%;
+}
+
+.delete_icon {
+    width: 17%;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.icon{
+    width: 100%;
+}
+
+.delete_icon:hover{
+    transition: .3s;
+    cursor: pointer;
+    opacity: .6;
+}
+
+.edit_icon:hover{
+    transition: .3s;
+    cursor: pointer;
+    opacity: .6;
+}

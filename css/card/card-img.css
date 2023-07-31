@@ -1,3 +1,9 @@
-.card_img{
+.card_img {
     width: 100%;
+    border-radius: 5px;
 }
+
+.card_img_container {
+    position: relative;
+}
+

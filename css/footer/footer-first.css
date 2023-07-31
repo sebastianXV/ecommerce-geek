@@ -1,0 +1,5 @@
+.footer_first{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}

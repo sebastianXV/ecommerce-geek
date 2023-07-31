@@ -1,15 +1,28 @@
 .nav_login{
     margin-left: auto;
     border: 1px solid var(--color-principal);
-    padding: 0 4rem;
-    height: 100%;
+    padding: 1rem 4rem;
+    text-align: center;
     color: var(--color-principal);
+    margin-left: auto;
 }
 
 .nav_login:hover{
     transition: .2s;
     cursor: pointer;
-    border: none;
     color: white;
-    background: var(--color-principal);
+}
+
+@media(max-width:768px){
+    .nav_login{
+        margin-right: auto;
+        width: 30%;
+        padding: 1rem 0rem;
+    }
+}
+
+@media(max-width:400px){
+    .nav_login{
+        padding: 1rem .5rem;
+    }
 }

@@ -1,5 +1,11 @@
 .section_head{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+@media(max-width:620px){
+    .section_head{
+        flex-direction: column;
+    }
 }

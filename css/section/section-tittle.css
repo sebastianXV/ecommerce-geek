@@ -4,3 +4,15 @@
     font-weight: bold;
     color: var(--color-titulo);
 }
+
+@media(max-width:760px){
+    .section_tittle{
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:520px){
+    .section_tittle{
+        font-size: 1.4rem;
+    }
+}
