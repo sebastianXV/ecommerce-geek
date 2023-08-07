@@ -13,6 +13,10 @@
     color: white;
 }
 
+.desactive{
+    display: none;
+}
+
 @media(max-width:768px){
     .nav_login{
         margin-right: auto;

@@ -4,11 +4,16 @@
     --color-footer: #EAF2FD;
     --color-main: #F5F5F5;
 
+}
 
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    
 }
 
 main {

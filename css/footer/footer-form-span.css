@@ -1,0 +1,11 @@
+.form_span{
+    display: none;
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+
+.active{
+    display: block;
+}
+

@@ -16,7 +16,12 @@
 
 @media(max-width:760px){
     .nav_search{
-
         display: none;
+    }
+
+    .focus{
+        display: block;
+        width: 100%;
+        
     }
 }

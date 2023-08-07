@@ -32,11 +32,10 @@
     <link rel="stylesheet" href="../../css/footer/footer_form.css">
     <link rel="stylesheet" href="../../css/footer/footer_list.css">
     <link rel="stylesheet" href="../../css/footer/footer-list-item.css">
-    <link rel="stylesheet" href="../../css/footer/form.css">
     <link rel="stylesheet" href="../../css/footer/footer-form-item.css">
-    <link rel="stylesheet" href="../../css/footer/form-tittle.css">
     <link rel="stylesheet" href="../../css/footer/footer-form-button.css">
     <link rel="stylesheet" href="../../css/footer/footer-first.css">
+    <link rel="stylesheet" href="../../css/footer/footer-form-span.css">
 
 
     <link rel="stylesheet" href="../../css/credits/credits.css">
@@ -46,18 +45,18 @@
 <body>
     <header>
         <nav class="nav margen_global">
-            <a href="#"><img class="nav_logo" src="../../img/Logo.png" alt=""></a>
+            <a href="/index.html"><img class="nav_logo" src="../../img/Logo.png" alt=""></a>
             <input class="nav_search" type="text" placeholder="¿Que deseas buscar?">
         </nav>
     </header>
 
     <section id="login">
         <div class="login_container margen_global">
-            <form class="form center" style="width: 35%;" action="" data-form>
+            <form class="form center" style="width: 40%;" action="./products.html" data-login>
                 <h1 class="form_tittle">Iniciar Sesion</h1>
-                <input class="form_item" type="text" name="email" placeholder="Correo" data-email>
-                <input class="form_item" type="password" name="password" placeholder="Contraseña" data-password>
-                <button class="form_button center" type="submit" style="width: 100%;">Entrar</button>
+                <input class="form_item" type="email" name="email" placeholder="Correo" required data-email>
+                <input class="form_item" type="password" name="password" placeholder="Contraseña" required data-password>
+               <button class="form_button center"style="width: 100%;" data-login>Entrar</button> 
             </form>
         </div>
     </section>
@@ -82,11 +81,12 @@
             </div>
 
             <div class="footer_form">
-                <form class="form" action="" data-form>
+                <form class="form" action="" data-form-footer>
                     <h1 class="form_tittle">Hable con nosotros</h1>
-                    <input class="form_item" type="text" name="name" placeholder="Nombre" data-name>
-                    <input class="form_item" type="text" name="message" placeholder="Escriba su mensaje" data-message>
+                    <input class="form_item" type="text" name="name" placeholder="Nombre"  maxlength="40" required data-name>
+                    <input class="form_item" type="text" name="message" placeholder="Escriba su mensaje"  maxlength="420" required data-message>
                     <button class="form_button" type="submit">Enviar mensaje</button>
+                    <span id="span" class="form_span"><p>El mensaje ha sido enviado</p></span>
                 </form>
             </div>
         </div>
@@ -95,6 +95,9 @@
     <div class="credits margen_global">
         <p>Desarrollado por Sebastian Rojas</p>
     </div>
+
+    <script src="../../js/login.js" type="module"></script>
+
 
 </body>
 

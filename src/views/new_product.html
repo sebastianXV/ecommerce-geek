@@ -1,44 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Product</title>
 
-    <link rel="stylesheet" href="css/header/nav.css">
-    <link rel="stylesheet" href="css/header/nav_search.css">
-    <link rel="stylesheet" href="css/header/input_search.css">
-    <link rel="stylesheet" href="css/header/input_icon.css">
-    <link rel="stylesheet" href="css/header/nav_login.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/center.css">
+    <link rel="stylesheet" href="../../css/hover-min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/header/nav.css">
+    <link rel="stylesheet" href="../../css/header/nav_login.css">
+    <link rel="stylesheet" href="../../css/header/nav_logo.css">
+    <link rel="stylesheet" href="../../css/header/nav_search.css">
+
+    <link rel="stylesheet" href="../../css/new/new.css">
+
+    <link rel="stylesheet" href="../../css/footer/form.css">
+    <link rel="stylesheet" href="../../css/footer/footer-form-item.css">
+    <link rel="stylesheet" href="../../css/footer/form-tittle.css">
+    <link rel="stylesheet" href="../../css/footer/footer-form-button.css">
+
+    <link rel="stylesheet" href="../../css/footer/footer-container.css">
+    <link rel="stylesheet" href="../../css/footer/footer_form.css">
+    <link rel="stylesheet" href="../../css/footer/footer_list.css">
+    <link rel="stylesheet" href="../../css/footer/footer-list-item.css">
+    <link rel="stylesheet" href="../../css/footer/footer-form-item.css">
+    <link rel="stylesheet" href="../../css/footer/footer-form-button.css">
+    <link rel="stylesheet" href="../../css/footer/footer-first.css">
+    <link rel="stylesheet" href="../../css/footer/footer-form-span.css">
+
+
+
+    <link rel="stylesheet" href="../../css/credits/credits.css">
+
 </head>
+
+
 <body>
     <header>
-        <nav class="nav">
-            <img src="../../img/Logo.png" alt="">
+        <nav class="nav margen_global">
+            <a href="/index.html"><img class="nav_logo" src="../../img/Logo.png" alt=""></a>
             <input class="nav_search" type="text" placeholder="¿Que deseas buscar?">
-            <button class="nav_login">
-                Login
-            </button>
         </nav>
     </header>
 
     <section id="newProduct">
-        <form action="" data-form>
-            <h1 class="form_tittle">Agregar nuevo producto</h1>
-            <input class="form_item" type="url" name="url" placeholder="URL de la imagen" data-name>
-            <input class="form_item" type="text" name="category" data-category placeholder="Categoria">
-            <input class="form_item" type="text" name="product" data-product placeholder="Nombre del producto">
-            <input class="form_item" type="text" name="price" data-price placeholder="Precio del producto">
-            <input class="form_item" type="text" name="product" data-description placeholder="Descripcion del producto">
-            <button type="submit">Enviar mensaje</button>
-        </form>
+        <div class="new_container">
+            <form class="form center margen_global" style="width: 50%;" action="" data-form>
+                <h1 class="form_tittle">Agregar nuevo producto</h1>
+                <input class="form_item" type="url" name="url" placeholder="URL de la imagen" required data-url>
+                <input class="form_item" type="text" name="category" required data-category placeholder="Categoria">
+                <input class="form_item" type="text" name="product" required data-product
+                    placeholder="Nombre del producto" maxlength="20">
+                <input class="form_item" type="number" name="price" required data-price
+                    placeholder="Precio del producto">
+                <input class="form_item" type="text" name="product" required data-description
+                    placeholder="Descripcion del producto" maxlength="150">
+                <button class="form_button center" type="submit">Enviar mensaje</button>
+                <span class="form_span">Ningun campo debe estar vacio</span>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <div class="container">
+        <div class="container margen_global">
             <div class="footer_first">
                 <div class="footer_icon">
-                    <img src="img/Logo.png" alt="">
+                    <img src="../../img/Logo.png" alt="">
                 </div>
                 <ul class="footer_list">
                     <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Quienes somos</a></li>
@@ -54,19 +89,34 @@
             </div>
 
             <div class="footer_form">
-                <form action="" data-form>
+                <form class="form" data-form-footer>
                     <h1 class="form_tittle">Hable con nosotros</h1>
-                    <input class="form_item" type="text" name="name" placeholder="Escriba su nombre" data-name>
-                    <input class="form_item" type="text" name="message" data-message>
+                    <input class="form_item" type="text" name="name" placeholder="Nombre" maxlength="40" required
+                        data-name>
+                    <input class="form_item" type="text" name="message" placeholder="Escriba su mensaje" maxlength="420"
+                        required data-message>
                     <button class="form_button" type="submit">Enviar mensaje</button>
+                    <span id="span" class="form_span">
+                        <p>El mensaje ha sido enviado</p>
+                    </span>
                 </form>
             </div>
         </div>
-
-        <div class="credits">
-            <p>Desarrollado por Sebastian Rojas</p>
-        </div>
     </footer>
 
+    <div class="credits">
+        <p>Desarrollado por Sebastian Rojas</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+        integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="module" src="../../js/script.js"></script>
+    <script type="module" src="../../js/controller/register.controller.js"></script>
+
+
 </body>
+
 </html>

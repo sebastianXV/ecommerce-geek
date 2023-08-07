@@ -6,5 +6,9 @@
     .nav_search_icon {
         display: block;
     }
+
+    .desactive{
+        display: none;
+    }
     
 }
