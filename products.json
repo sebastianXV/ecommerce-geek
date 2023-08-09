@@ -2,145 +2,145 @@
   "products": [
     {
       "url": "../../img/star-wars/starWars.png",
-      "category": "starWars",
-      "nombre":"Producto XYZ",
-      "price":"$60.000",
+      "category": "star-wars",
+      "nombre": "Producto XYZ",
+      "price": "60000",
       "description": "Cabeza de Star Wars",
       "id": "c77bb8c9-5e5d-4f9c-ac72-d45a6f10520d"
     },
     {
       "url": "../../img/star-wars/Dark1.png",
-      "category": "starWars",
-      "nombre":"Producto XYZ",
-      "price":"$60.000",
+      "category": "star-wars",
+      "nombre": "Producto XYZ",
+      "price": 60000,
       "description": "Cabeza de Star Wars",
       "id": "c77bb8c9-5e5d-4f9c-ac72-d0a64552f10520d"
     },
     {
       "url": "../../img/star-wars/Dark2.png",
-      "category": "starWars",
-      "nombre":"Producto XYZ",
-      "price":"$60.000",
+      "category": "star-wars",
+      "nombre": "Producto XYZ",
+      "price": 60000,
       "description": "Cabeza de Star Wars",
       "id": "c77bb8c9-5e5d-4f9c-ac72-d0a62244f10520d"
     },
     {
       "url": "../../img/star-wars/Dark3.png",
-      "category": "starWars",
-      "nombre":"Producto XYZ",
-      "price":"$60.000",
+      "category": "diverso",
+      "nombre": "Producto XYZ",
+      "price": "60000",
       "description": "Cabeza de Star Wars",
       "id": "c77bb3448c9-5e5d-4f9c-ac72-d0a6f10520d"
     },
     {
       "url": "../../img/star-wars/Dark4.png",
-      "category": "starWars",
-      "nombre":"Producto XYZ",
-      "price":"$60.000",
+      "category": "star-wars",
+      "nombre": "Producto XYZ",
+      "price": 60000,
       "description": "Cabeza de Star Wars",
       "id": "c77b93848b8c9-5e5d-4f9c-ac72-d0a6f10520d"
     },
     {
       "url": "../../img/star-wars/Dark5.png",
-      "category": "starWars",
-      "nombre":"Producto XYZ",
-      "price":"$60.000",
+      "category": "star-wars",
+      "nombre": "Producto XYZ",
+      "price": 60000,
       "description": "Cabeza de Star Wars",
       "id": "c77bb88484c9-5e5d-4f9c-ac72-d0a6f10520d"
     },
     {
       "url": "../../img/consolas/consola1.png",
       "category": "consolas",
-      "nombre":"Producto X",
-      "price":"$60.000",
+      "nombre": "Producto X",
+      "price": 60000,
       "description": "Consola",
       "id": "c77bb88589k2c9-5e5d-4f9c-ac72-d0a6f10520d"
     },
     {
       "url": "../../img/consolas/consola2.png",
       "category": "consolas",
-      "nombre":"Producto X",
-      "price":"$60.000",
+      "nombre": "Producto X",
+      "price": 60000,
       "description": "Consola",
       "id": "c77bb8858883k2c9-5e5d-4f9c-ac72-d0a6f10520d"
     },
     {
       "url": "../../img/consolas/consola3.png",
       "category": "consolas",
-      "nombre":"Producto X",
-      "price":"$60.000",
+      "nombre": "Producto X",
+      "price": 60000,
       "description": "Consola",
       "id": "c77bb883k2c9-5e5d-4f9c-ac72-d0a6f520d"
     },
     {
       "url": "../../img/consolas/consola4.png",
       "category": "consolas",
-      "nombre":"Producto X",
-      "price":"$60.000",
+      "nombre": "Producto X",
+      "price": 60000,
       "description": "Consola",
       "id": "c77bb883c9-5e5d-4f9c-ac72-d0a6f10520d"
     },
     {
       "url": "../../img/consolas/consola5.png",
       "category": "consolas",
-      "nombre":"Producto X",
-      "price":"$60.000",
+      "nombre": "Producto X",
+      "price": 60000,
       "description": "Consola",
       "id": "c77bb8323k2c9-5e5d-4f9c-ac72-d0a6f10520d"
     },
     {
       "url": "../../img/consolas/control1.png",
       "category": "consolas",
-      "nombre":"Producto X",
-      "price":"$60.000",
+      "nombre": "Producto X",
+      "price": 60000,
       "description": "Consola",
       "id": "c77bb83222c9-5e5d-4f9c-ac72-d0a6f10520d"
     },
     {
       "url": "../../img/diversos/diverso1.png",
       "category": "diverso",
-      "nombre":"Producto XY",
-      "price":"$60.000",
+      "nombre": "Producto XY",
+      "price": 60000,
       "description": "Geek",
       "id": "c77bb8322c9-5e5d-4f9c-ac72-d0a6f520d"
     },
     {
       "url": "../../img/diversos/diverso2.png",
       "category": "diverso",
-      "nombre":"Producto XY",
-      "price":"$60.000",
+      "nombre": "Producto XY",
+      "price": 60000,
       "description": "Geek",
       "id": "c77bb83222c9-5e5d-4f9c-ac72-d0a7886f520d"
     },
     {
       "url": "../../img/diversos/diverso3.png",
       "category": "diverso",
-      "nombre":"Producto XY",
-      "price":"$60.000",
+      "nombre": "Producto XY",
+      "price": 60000,
       "description": "Geek",
       "id": "c77bb83222c9-5e5d-4f9c-ac72-d0a620d"
     },
     {
       "url": "../../img/diversos/diverso4.png",
       "category": "diverso",
-      "nombre":"Producto XY",
-      "price":"$60.000",
+      "nombre": "Producto XY",
+      "price": 60000,
       "description": "Geek",
       "id": "c7b83222c9-5e5d-4f9c-ac72-d0a520d"
     },
     {
       "url": "../../img/diversos/diverso5.png",
       "category": "diverso",
-      "nombre":"Producto XY",
-      "price":"$60.000",
+      "nombre": "Producto XY",
+      "price": 60000,
       "description": "Geek",
       "id": "c77bb22c9-5e5d-4f9c-ac72-d0a520d"
     },
     {
       "url": "../../img/diversos/diverso6.png",
       "category": "diverso",
-      "nombre":"Producto XY",
-      "price":"$60.000",
+      "nombre": "Producto XY",
+      "price": 60000,
       "description": "Geek",
       "id": "c77b3222c9-5e5d-4f9c-ac72-d0f520d"
     }
