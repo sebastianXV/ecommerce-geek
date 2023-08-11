@@ -1,10 +1,6 @@
-// import { products } from "./Api/products-services.js";
-// import { Product } from "./controller/product.controller.js";
 
 
-
-
-
+//Footer
 document.querySelector("[data-form-footer]").addEventListener('submit', function(e){
     e.preventDefault();
 
@@ -15,6 +11,7 @@ document.querySelector("[data-form-footer]").addEventListener('submit', function
     form.reset();
 
 });
+
 
 
 
