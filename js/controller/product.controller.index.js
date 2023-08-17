@@ -1,8 +1,6 @@
 import { products } from "../services/products-services.js";
 
 
-//
-
 const newProduct = (url, category, nombre, price, id) => {
 
     const star = document.querySelector("#star-wars .container");
@@ -21,19 +19,25 @@ const newProduct = (url, category, nombre, price, id) => {
 
     const line = document.createElement("div");
     line.classList.add("card");
-    const content =
-        `
+
+    // Contenido de la tarjeta (imagen, título, precio, etc.)
+    const content = `
+    
         <div class="card_img_container">
-           <img class="card_img" src=${url} alt="star-wars-product">
+            <img class="card_img" src=${url} alt="star-wars-product">
         </div>
         <h1 class="card_tittle">${nombre}</h1>
         <p class="card_precio">$${price}</p>
-        <a href="" class="card_link hvr-wobble-bottom">Ver producto</a>`;
+        <a href="#" class="card_link hvr-wobble-bottom">Ver producto</a>
+
+        <!-- Contenedor de detalles -->
+
+    `;
 
     line.innerHTML = content;
     container.appendChild(line);
-};
 
+};
 
 //Recuperar
 products.productList()
@@ -42,7 +46,6 @@ products.productList()
             newProduct(url, category, nombre, price, description);
         });
     });
-
 
 
 //Tomar el valor de lo que el usuario digite
@@ -64,7 +67,7 @@ const applyFilter = (term) => {
         if (productName.includes(term.toLowerCase())) {
             card.style.display = "flex";
         } else {
-            card.style.display = "none"; 
+            card.style.display = "none";
         }
     });
 };

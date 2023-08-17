@@ -36,7 +36,7 @@
       "url": "../../img/star-wars/Dark4.png",
       "category": "star-wars",
       "nombre": "Producto XYZ",
-      "price": 60000,
+      "price": "60000",
       "description": "Cabeza de Star Wars",
       "id": "c77b93848b8c9-5e5d-4f9c-ac72-d0a6f10520d"
     },
