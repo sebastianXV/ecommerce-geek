@@ -68,7 +68,7 @@
       "url": "../../img/consolas/consola3.png",
       "category": "consolas",
       "nombre": "Producto X",
-      "price": 60000,
+      "price": "60000",
       "description": "Consola",
       "id": "c77bb883k2c9-5e5d-4f9c-ac72-d0a6f520d"
     },

@@ -28,12 +28,12 @@ const newProduct = (url, nombre, price, description, id) => {
     btn.addEventListener("click", () => {
         const id = btn.id
         products.deleteProduct(id).then(response => {
+            alert("Se eliminó el producto")
         })
     });
 
     return line;
 };
-
 
 
 

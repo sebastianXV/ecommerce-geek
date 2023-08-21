@@ -1,7 +1,7 @@
 import { products } from "../services/products-services.js";
 
 
-const newProduct = (url, category, nombre, price, id) => {
+const newProduct = (url, category, nombre, price, description, id) => {
 
     const star = document.querySelector("#star-wars .container");
     const consolas = document.querySelector("#consolas .container");
@@ -28,10 +28,7 @@ const newProduct = (url, category, nombre, price, id) => {
         </div>
         <h1 class="card_tittle">${nombre}</h1>
         <p class="card_precio">$${price}</p>
-        <a href="#" class="card_link hvr-wobble-bottom">Ver producto</a>
-
-        <!-- Contenedor de detalles -->
-
+        <a href="/search_product.html?id=${id}" class="card_link hvr-wobble-bottom">Ver producto</a>
     `;
 
     line.innerHTML = content;
@@ -42,35 +39,13 @@ const newProduct = (url, category, nombre, price, id) => {
 //Recuperar
 products.productList()
     .then((data) => {
-        data.forEach(({ url, category, nombre, price, description }) => {
-            newProduct(url, category, nombre, price, description);
+        data.forEach(({ url, category, nombre, price, description, id }) => {
+            newProduct(url, category, nombre, price, description, id);
         });
     });
 
 
-//Tomar el valor de lo que el usuario digite
-const searchInput = document.querySelector(".nav_search");
 
-searchInput.addEventListener("input", (event) => {
-    const searchTerm = event.target.value;
-    applyFilter(searchTerm);
-});
-
-
-//Recibe el valor y lo compara en cada card
-const applyFilter = (term) => {
-    const allCards = document.querySelectorAll(".card");
-
-    allCards.forEach(card => {
-        const productName = card.querySelector(".card_tittle").textContent.toLowerCase();
-
-        if (productName.includes(term.toLowerCase())) {
-            card.style.display = "flex";
-        } else {
-            card.style.display = "none";
-        }
-    });
-};
 
 
 

@@ -27,8 +27,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const isDarkMode = body.classList.contains('dark');
         localStorage.setItem('darkMode', isDarkMode);
+
+
     });
 });
+
+//Tomar el valor de lo que el usuario digite
+const searchInput = document.querySelector(".nav_search");
+
+searchInput.addEventListener("input", (event) => {
+    const searchTerm = event.target.value;
+    applyFilter(searchTerm);
+});
+
+
+//Recibe el valor y lo compara en cada card
+const applyFilter = (term) => {
+    const allCards = document.querySelectorAll(".card");
+
+    allCards.forEach(card => {
+        const productName = card.querySelector(".card_tittle").textContent.toLowerCase();
+
+        if (productName.includes(term.toLowerCase())) {
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none";
+        }
+    });
+};
+
+
+
+
+
+
+
+
 
 
 

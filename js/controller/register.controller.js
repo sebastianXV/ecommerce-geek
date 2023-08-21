@@ -11,11 +11,8 @@ form.addEventListener("submit", (e) => {
     const description = document.querySelector("[data-description]").value
 
     products.createProduct(url, category, nombre, price, description).then(response => {
-        Swal.fire(
-            'El producto ha sido creado!',
-            'You clicked the button!',
-            'success'
-        )
+        console.log(response)
+        window.location.href = "new_succesfull.html"
     })
         .catch(err => console.log(err))
 });

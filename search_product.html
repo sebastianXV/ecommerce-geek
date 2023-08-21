@@ -20,11 +20,6 @@
     <link rel="stylesheet" href="css/header/nav_logo.css">
     <link rel="stylesheet" href="css/header/nav-search-icon.css">
 
-    <link rel="stylesheet" href="css/banner/banner.css">
-    <link rel="stylesheet" href="css/banner/banner-container.css">
-    <link rel="stylesheet" href="css/banner/banner_tittle.css">
-    <link rel="stylesheet" href="css/banner/banner_text.css">
-    <link rel="stylesheet" href="css/banner/banner_button.css">
 
     <link rel="stylesheet" href="css/section/section.css">
     <link rel="stylesheet" href="css/section/section-tittle.css">
@@ -37,6 +32,7 @@
     <link rel="stylesheet" href="css/card/card-img.css">
     <link rel="stylesheet" href="css/card/card-link.css">
     <link rel="stylesheet" href="css/card/card_precio.css">
+    <link rel="stylesheet" href="css/card/card_description.css">
 
     <link rel="stylesheet" href="css/footer/footer-container.css">
     <link rel="stylesheet" href="css/footer/footer_form.css">
@@ -65,59 +61,23 @@
         </nav>
     </header>
 
-    <section id="banner">
-        <div class="container margen_global">
-            <h1 class="banner_tittle">Febrero Promocional</h1>
-            <p class="banner_text">Productos seleccionados con 33% de descuento</p>
-            <a href="#consolas" class="banner_button hvr-grow-rotate">Ver Consolas</a>
-        </div>
-    </section>
     <main>
-        <section class="section margen_global" id="star-wars">
-            <div class="section_head">
-                <h1 class="section_tittle ">Star Wars</h1>
-                <div class="section_icons">
-                    <a href="src/views/products.html" class="icon_tittle hvr-icon-forward">Ver todos
-                        <img class="hvr-icon" src="img/iconos/flecha.png" alt=""></a>
+        <div class="container wrap margen_global">
+
+            <div class="show_card">
+                <div class="show_img_container">
+                    <img class="card_img" src="" alt="" data-url>
                 </div>
-            </div>
-            
-            <div class="container wrap">
-
-                <!-- Datos.json -->
-            </div>
-
-        </section>
-
-        <section class="section margen_global" id="consolas">
-            <div class="section_head">
-                <h1 class="section_tittle ">Consolas</h1>
-                <div class="section_icons">
-                    <a href="src/views/products.html" class="icon_tittle hvr-icon-forward">Ver todos
-                        <img class="hvr-icon" src="img/iconos/flecha.png" alt=""></a>
+                <div class="show_info">
+                    <h1 class="section_tittle" data-product></h1>
+                    <p class="card_precio" data-price></p>
+                    <p class="card_description" data-description></p>
                 </div>
             </div>
 
-            <div class="container wrap">
-                <!-- Datos.json -->
-            </div>
 
-        </section>
+        </div>
 
-        <section class="section margen_global" id="diversos">
-            <div class="section_head">
-                <h1 class="section_tittle ">Diversos</h1>
-                <div class="section_icons">
-                    <a href="src/views/products.html" class="icon_tittle hvr-icon-forward">Ver todos
-                        <img class="hvr-icon" src="img/iconos/flecha.png" alt=""></a>
-                </div>
-            </div>
-
-            <div class="container wrap">
-                <!-- Datos.json -->
-            </div>
-
-        </section>
     </main>
 
     <footer>
@@ -129,12 +89,16 @@
                 </div>
                 <ul class="footer_list">
                     <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Quienes somos</a></li>
-                    <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Politica de privacidad</a>
+                    <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Politica de
+                            privacidad</a>
                     </li>
-                    <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Programa de fidelidad</a>
+                    <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Programa de
+                            fidelidad</a>
                     </li>
-                    <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Nuestras tiendas</a></li>
-                    <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Quiero ser franquiciado</a>
+                    <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Nuestras tiendas</a>
+                    </li>
+                    <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Quiero ser
+                            franquiciado</a>
                     </li>
                     <li class="footer_list_item"><a class="hvr-underline-from-left" href="#">Anuncie aqui</a> </li>
                 </ul>
@@ -163,7 +127,8 @@
     </div>
 
     <script src="./js/header.js"></script>
-    <script type="module" src="./js/controller/product.controller.index.js"></script>
+    <script type="module" src="./js/controller/search.controller.js"></script>
+    <script type="module" src="./js/controller/search.controller.js"></script>
     <script src="./js/script.js"></script>
 
 </body>

@@ -1,0 +1,5 @@
+.complete_button{
+    color: white;
+    background-color: var(--color-principal);
+    padding: 1rem 3rem;
+}

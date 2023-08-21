@@ -4,7 +4,7 @@ function handleSearchIconClick() {
     const search = document.querySelector(".nav_search");
     const icon = document.querySelector(".nav_search_icon");
 
-    login.classList.toggle("desactive");
+    //login.classList.toggle("desactive");
     search.classList.toggle("focus");
     icon.classList.toggle("desactive");
     search.focus();
@@ -16,7 +16,7 @@ function handleSearchBlur() {
     const search = document.querySelector(".nav_search");
     const icon = document.querySelector(".nav_search_icon");
 
-    login.classList.toggle("desactive");
+    //login.classList.toggle("desactive");
     search.classList.toggle("focus");
     icon.classList.toggle("desactive");
 }
