@@ -1,11 +1,11 @@
 const productList = () => {
-    return fetch("http://localhost:3000/products").then(response => {
+    return fetch("https://ecommerce-geek.onrender.com/products").then(response => {
         return response.json();
     });
 };
 
 const createProduct = (url, category, nombre, price, description) => {
-    return fetch("http://localhost:3000/products", {
+    return fetch("https://ecommerce-geek.onrender.com/products", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -16,18 +16,18 @@ const createProduct = (url, category, nombre, price, description) => {
 
 const deleteProduct = (id) => {
     console.log("eliminar a", id)
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`https://ecommerce-geek.onrender.com/products/${id}`, {
         method: "DELETE"
     });
 };
 
 const detailProduct = (id) => {
-    return fetch(`http://localhost:3000/products/${id}`).then(response =>
+    return fetch(`https://ecommerce-geek.onrender.com/products/${id}`).then(response =>
         response.json())
 }
 
 const updateProduct = (url, category, nombre, price, description, id) => {
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`https://ecommerce-geek.onrender.com/products/${id}`, {
         method: "PUT",
         headers: {
             'content-type': 'application/json',
